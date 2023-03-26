@@ -1,0 +1,33 @@
+._showcase {
+    background-color: $color-theme-3;
+    
+    .container {
+        @include commonFlex;
+        font-family: $font-poppins;
+        color: $color-dark-2;
+
+        
+        ._left_showcase {
+
+            p {
+                font-size: 18pt;
+                font-weight: $font-weight-regular;
+                letter-spacing: 3px;
+            }
+            h1 {
+                font-size: 60px;
+                font-weight: $font-weight-bold;
+            }
+            
+            button {
+                margin-top: 20px;
+                @include redButton(185px);
+            }
+        }
+        ._right_showcase {
+            padding-bottom: 30px;
+            
+        }
+
+    }
+}

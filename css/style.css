@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap");
+._showcase {
+  background-color: #F3F2F2;
+}
+._showcase .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  color: #292929;
+}
+._showcase .container ._left_showcase p {
+  font-size: 18pt;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+._showcase .container ._left_showcase h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+._showcase .container ._left_showcase button {
+  margin-top: 20px;
+  background-color: #FA3150;
+  color: #FFFFFF;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 16px;
+  height: 55px;
+  width: 185px;
+  transition: all 250ms ease-in-out;
+}
+._showcase .container ._left_showcase button:hover {
+  background-color: #92B8B9;
+}
+._showcase .container ._right_showcase {
+  padding-bottom: 30px;
+}
+
+._main_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  height: 100px;
+}
+._main_menu ._links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+._main_menu ._links a {
+  margin-left: 40px;
+  color: #000000;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+._main_menu ._links a:hover {
+  color: #92B8B9;
+}
+._main_menu ._links :nth-child(4), ._main_menu ._links :nth-child(5), ._main_menu ._links :nth-child(6) {
+  color: #AEAEAE;
+  margin-left: 22px;
+}
+
+._banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+._banner ._tag_links a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+._banner ._tag_links a:hover {
+  color: #92B8B9;
+}/*# sourceMappingURL=style.css.map */

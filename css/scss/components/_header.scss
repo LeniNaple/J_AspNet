@@ -1,0 +1,24 @@
+._main_menu {
+    @include commonFlex;
+    background-color: $color-white;
+    height: 100px;
+
+    ._links {
+        
+        @include commonFlex;
+        font-family: $font-poppins;
+        font-weight: $font-weight-regular;
+        font-size: 15px;
+
+        a {
+            margin-left: 40px;
+            @include hoverLink;
+       
+        }
+        :nth-child(4), :nth-child(5), :nth-child(6){
+            color: $color-dark-4;
+            margin-left: 22px;
+        }
+    }
+
+}
