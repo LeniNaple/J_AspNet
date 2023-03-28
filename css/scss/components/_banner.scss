@@ -5,17 +5,45 @@
     flex-direction: column;
 
     ._tag_links {
+        display: flex;
 
-        a {
-            @include hoverLink;
- 
+        li {    
+            list-style: none;
         }
-              
-         
-           
-          
-     
+
+            ._tag_item+li::before {
+                content:"/";
+                margin-left:5px;
+                margin-right:5px;
+            }
+
+            a {
+                @include hoverLink();
+            }
     }
 
+    ._collection_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
 
+        @include card(270px);
+
+    }
+    button {
+        font-family: $font-poppins;
+        background-color: $color-white;
+        font-size: 16px;
+        font-weight: $font-weight-regular;
+        height: 50px;
+        width: 190px;
+        padding: 10px 25px;
+        color: $color-dark-3;
+        border: 1px solid $color-dark-2;
+
+        i {
+            font-size: 12px;
+        }
+    }
 }

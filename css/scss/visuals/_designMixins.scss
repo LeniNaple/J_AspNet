@@ -26,9 +26,53 @@
     }     
 }
 
-@mixin card {
+@mixin card ($width) {
+    ._card {
+        width: $width;
+        overflow: hidden;
+        justify-self: center;
+        background: $color-white;
 
+        img {
+            padding: 0;
+            margin: 0;
+        }
 
+        ._card_bottom { 
+            width: 100%;
+            font-family: $font-poppins;
+            color: $color-dark-1;
+            position: relative;
 
+            :first-child {
+                font-weight: $font-weight-medium;
+                color: $color-dark-2;
+                font-size: 18px;
+            }
+            :nth-child(2) {
+                font-weight: $font-weight-regular;
+                color: $color-dark-3;
+                font-size: 16px;
+                margin: 0;
+            }
+            a {
+                display: none;
+                opacity: 100%;
+                font-size: 20px;
+                @include hoverLink;
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+            } 
+        }
+        
+    }
+    :hover {
+        ._card_bottom {
+            a {
+                display: flex;
+            } 
+        }
+    }
 
 }
